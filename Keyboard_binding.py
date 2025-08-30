@@ -273,9 +273,9 @@ class keyboard_binding():
       ''' Internal use: 
           > calls found functions list of a key 
       '''
-      def __call_bind(self,key_data,index):
+      def __call_bind(self,key,key_data,index):
           for i in range(len(key_data[4][index])):
-              key_data[4][index][i]()
+              key_data[4][index][i]( key , key_data )
 
 
 
@@ -309,13 +309,13 @@ class keyboard_binding():
                                                 
                  if remap[3]:                                                      
                     if remap[2] == 0:                          
-                       self.__call_bind(remap,0)                   
+                       self.__call_bind(k,remap,0)                   
                        remap[2] = 1 
                  else:                           
-                       self.__call_bind(remap,0)                   
+                       self.__call_bind(k,remap,0)                   
                        remap[2] = 1                               
               else:                              
                     remap[1] = 0                                  
                     if remap[2] == 1:                             
                        remap[2] = 0
-                       self.__call_bind(remap,1)             
+                       self.__call_bind(k,remap,1)             
