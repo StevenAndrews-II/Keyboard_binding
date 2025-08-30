@@ -28,7 +28,7 @@ pip install keyboard pygetwindow
 Clone this repo:  
 
 ```bash
-git clone https://github.com/StevenAndrews_II/Keyboard_binding.git
+git clone https://github.com/StevenAndrews-II/Keyboard_binding.git
 cd Keyboard_binding
 ```
 
