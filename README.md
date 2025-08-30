@@ -43,18 +43,18 @@ from keyboard_binding import keyboard_binding
 kb = keyboard_binding(APP_TITLE="MyApp")
 
 # Bind a simple function
-def on_press(key,data):
+def on_press(key,mappedkey):
     print("A was pressed!")
 
-def on_release(key,data):
+def on_release(key,mappedkey):
     print("A was released!")
 
-def switch_keys(key,data):
+def switch_keys(key,mappedkey):
     kb.swap_binds(b,c):
 
-def switch_key_indicator(key,data):
+def switch_key_indicator(key,mappedkey):
     print(f"{key} moved..")
-    print(f" Data : {data } ")
+    print(f" Map for current down key : {mappedkey} ")
 
 
 kb.bind("a", head_func=on_press, tail_func=on_release, toggle=True)
