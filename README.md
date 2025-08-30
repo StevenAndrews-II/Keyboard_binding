@@ -43,13 +43,22 @@ from keyboard_binding import keyboard_binding
 kb = keyboard_binding(APP_TITLE="MyApp")
 
 # Bind a simple function
-def on_press():
+def on_press(key,data):
     print("A was pressed!")
 
-def on_release():
+def on_release(key,data):
     print("A was released!")
 
+def switch_keys(key,data):
+    kb.swap_binds(b,c):
+
+def switch_key_indicator(key,data):
+    print(f"{key} moved..")
+    print(f" Data : {data } ")
+
+
 kb.bind("a", head_func=on_press, tail_func=on_release, toggle=True)
+kb.bind("b", head_func=switch_keys , tail_func=switch_key_indicator)
 
 # Main loop
 while True:
