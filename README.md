@@ -1,6 +1,6 @@
 # ⌨️ Keyboard Binding API  
 
-A lightweight Python library by **Steven Andrews II** for managing **keyboard bindings** in applications.  
+A lightweight Python API by **Steven Andrews II** for managing **keyboard bindings** in applications.  
 It supports **customizable key registration, key remapping, toggled or continuous execution, function binding, and persistence with JSON storage**.  
 
 ---
@@ -19,7 +19,7 @@ It supports **customizable key registration, key remapping, toggled or continuou
 
 ## 🚀 Installation  
 
-This library requires the following dependencies:  
+This API requires the following dependencies:  
 
 ```bash
 pip install keyboard pygetwindow
