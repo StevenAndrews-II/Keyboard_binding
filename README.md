@@ -93,4 +93,4 @@ while True:
 - Author: **Steven Andrews II**  
 - Date: 08/28/2025  
 - Version: 1.0  
-- License: MIT (consider adding LICENSE file)  
+- License: MIT
